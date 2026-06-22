@@ -1,16 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #fffaf5;
-    text-align: center;
-    font-family: sans-serif;
+    background-image: url("images/beach.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
 h1 {
-    color: #f08cd4;
-    font-size: 40px;
-    margin-top: 60px;
+    color: #5d4520;
 }
-button {
-    background-color: #f08cd4;
-    color: azure;
-    padding: 15px 30px;
-    border-radius: 10px;
+
+.description {
+    color: #6f5326;
+}
+
+.year-section {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+summary {
+    color: #6f5326;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+summary:hover {
+    color: #4b3618;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
