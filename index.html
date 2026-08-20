@@ -38,7 +38,7 @@
         <section class="year-section">
             <details>
                 <summary>2023</summary>
-                <ul>
+                <ul id="events-2023">
                     <li>
                         <span class="date">
                             03/29
@@ -94,7 +94,7 @@
         <section class="year-section">
             <details>
                 <summary>2024</summary>
-                <ul>
+                <ul id="events-2024">
                     <li>
                         <span class="date">
                         01/11
@@ -214,7 +214,7 @@
         <section class="year-section">
             <details>
                 <summary>2025</summary>
-                <ul>
+                <ul id="events-2025">
                     <li>
                         <span class="date">
                             01/13
@@ -343,7 +343,7 @@
         <section class="year-section">
             <details>
                 <summary>2026</summary>
-                <ul>
+                <ul id="events-2026">
                     <li>
                         <span class="date">
                             01/09
@@ -447,6 +447,26 @@
                 </ul>
             </details>
         </section>
+        <section class="add-event">
+            <h2>参戦記録を追加</h2>
+            <form id="event-form">
+                <label>
+                    日付
+                    <input type="date" id="event-date" required>
+                </label>
+                <label>
+                    公演名
+                    <input type="text" id="event-title" placeholder="公演名を入力" required>
+                </label>
+                <label>
+                    会場・地域
+                    <input type="text" id="event-location" placeholder="会場や地域を入力">
+                </label>
+                <button type="submit">追加する</button>
+            </form>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

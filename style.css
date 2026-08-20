@@ -213,3 +213,12 @@ li:hover {
     letter-spacing: .02em;
     font-size: 1rem;
 }
+
+.location {
+    font-family: "Noto Serif JP", serif;
+    color: #8a6934;
+    display: block;
+    font-size: 0.8em;
+    margin-top: 4px;
+    opacity: 0.7;
+}
