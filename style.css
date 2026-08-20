@@ -170,10 +170,6 @@ summary:hover {
     color: #6f5326;
 }
 
-summary::-webkit-details-marker {
-    display: none;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -221,4 +217,88 @@ li:hover {
     font-size: 0.8em;
     margin-top: 4px;
     opacity: 0.7;
+}
+
+
+/* =========================
+Edit Page
+========================= */
+
+.add-event {
+    max-width: 500px;
+    margin: 40px auto 30px;
+}
+
+#event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#event-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    color: #806b45;
+}
+
+#event-form input {
+    padding: 12px 14px;
+    border: 1px solid #b49a6a;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #b7a98f;
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    transition: 0.3s;
+}
+
+#event-form input::placeholder {
+    color: #b7a98f;
+}
+
+#event-form input:focus {
+    border-color: #806b45;
+    background: #fff;
+}
+#event-form button {
+    margin-top: 10px;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: #a8895f;
+    box-shadow: 0 3px 8px rgba(100, 75, 40, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#event-form button:hover {
+    background: #8f7149;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(100, 75, 40, 0.25);
+}
+
+.back-link {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #806b45;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    transition: 0.3s;
+}
+
+.back-link a:hover {
+    color: #a8895f;
 }

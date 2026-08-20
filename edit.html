@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Archive - Edit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <div class="top-decoration">
+                <span class="line"></span>
+                <span class="dot">•</span>
+                <img class="crab-icon" src="images/crab-animal-crustacean-svgrepo-com (1).svg" alt="">
+                <span class="dot">•</span>
+                <span class="line"></span>
+            </div>
+
+            <h1>Stage Log</h1>
+
+            <p class="description">
+                参戦記録を追加
+            </p>
+
+            <div class="bottom-decoration">
+                <span class="line"></span>
+                <span class="dot">•</span>
+                <span class="star">✵</span>
+                <span class="dot">•</span>
+                <span class="line"></span>
+            </div>
+        </header>
+
+        <section class="add-event">
+
+            <form id="event-form">
+
+                <label>
+                    日付
+                    <input type="date" id="event-date" required>
+                </label>
+
+                <label>
+                    公演名
+                    <input type="text" id="event-title" placeholder="公演名を入力" required>
+                </label>
+
+                <label>
+                    会場・地域
+                    <input type="text" id="event-location" placeholder="会場や地域を入力">
+                </label>
+
+                <button type="submit">追加する</button>
+
+            </form>
+        </section>
+
+        <p class="back-link">
+            <a href="index.html">← Stage Logを見る</a>
+        </p>
+
+    </main>
+
+    <script src="edit.js"></script>
+</body>
+
+</html>
